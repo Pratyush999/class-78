@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Open console
+
+        </title>
+    </head>
+    <body>
+        <p>How to declare a array
+            <h4 id="declaration_of_array"></h4>
+        </p>
+        <p>How to fetch a first element of an array?
+            <h4 id="access_first_element"></h4>
+        </p>
+        <p>How to fetch a second element of an array?
+            <h4 id="access_second_element"></h4>
+        </p>
+        <p>How to get the length of an array?
+            <h4 id="display_length_of_array"></h4>
+        </p>
+        <p>How to add elemant at end of an array?
+            <h4 id="add_element_at_the_end_of_array"></h4>
+        </p>
+        <p>How to sort the arrays with alphabet?
+            <h4 id="display_sorted_of_array"></h4>
+        </p>
+        <p>How to reverse a array with alphabet?
+            <h4 id="display_reverse_array"></h4>
+        </p>
+        <script>
+            var fruits=["Apple","Banana","Mango"]
+            console.log(fruits)
+            document.getElementById("declaration_of_array").innerHTML=fruits;
+          var first_fruit=fruits[0]
+          console.log(first_fruit)
+          document.getElementById("access_first_element").innerHTML=fruits;
+          var second_fruit=fruits[1]
+          console.log(second_fruit)
+          document.getElementById("access_second_element").innerHTML=fruits;
+          var length_of_the_array=fruits.length
+          console.log(length_of_the_array)
+          fruits.push("Strawberry")
+          console.log(fruits)
+          fruits.sort()
+          console.log(fruits)
+          fruits.reverse()
+          console.log(fruits)
+          fruits.unshift("Lichi")
+          console.log(fruits)
+          fruits.shift()
+          console.log(fruits)
+         var array_value=""
+         for(i=0;i<=fruits.length;i++)
+         console.log(fruits[i])
+         array_value=array_value+fruits[i+"<br>"]
+        </script>
+    </body>
+</html>
